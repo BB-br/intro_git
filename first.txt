@@ -25,6 +25,18 @@ git diff
 git diff HEAD
 ステージとコミットの差分
 
+git remote add origin http~~
+オリジン（URL）登録
+git push origin master
+git push origin feature
+登録したGitHubへ送る
+featureブランチを送る
+
+Github
+
+.gitignoreファイルに指定
+git rm --cached
+
 originmaster　gitのこと。
 nothin to commit working tree is crean
 変更するものはなにもないよ
