@@ -6,3 +6,9 @@ git init
 git add .
 git commit
 git rm
+q←戻る
+git status
+
+originmaster　gitのこと。
+nothin to commit working tree is crean
+変更するものはなにもないよ
