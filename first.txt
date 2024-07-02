@@ -1,6 +1,11 @@
 Gitの練習をしていきます
 基本的なワークフローを学びます
 
+j下へ
+k上へ
+q閉じる
+
+
 testtest
 git init
 git add .
@@ -9,6 +14,22 @@ git rm
 q←戻る
 git status
 
+git log
+git log --oneline　一行表示
+git log -p ファイル名
+git log -n 3 最近の三つ
+
+ファイルの変更差分表示
+git diff
+ステージとの差分
+git diff HEAD
+ステージとコミットの差分
+
 originmaster　gitのこと。
 nothin to commit working tree is crean
 変更するものはなにもないよ
+change not stagged for commit
+ステージ化してないよ
+change to be committed
+コミットしてないよ
+
