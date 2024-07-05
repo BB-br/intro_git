@@ -1,5 +1,8 @@
 Gitの練習をしていきます
-基本的なワークフローを学びます
+基本的なワークフローを学びます。
+
+GitHub
+アクセストークン
 
 j下へ
 k上へ
@@ -11,9 +14,11 @@ ls見る
 
 testtest
 git init
-git add .
-git commit
-git rm
+git add <>
+git commit -v
+git commit -amend (直前のコミットを修正する　git pushしたコミットはやり直してはいけない)
+
+git rm <>
 q←戻る
 git status
 
@@ -23,20 +28,21 @@ git log -p ファイル名
 git log -n 3 最近の三つ
 
 ファイルの変更差分表示
-git diff
+git diff <>
 ステージとの差分
-git diff HEAD
+git diff HEAD <>
 ステージとコミットの差分
 
 git remote add origin http~~
 オリジン（URL）登録
 git push origin master
+origin(リモート名)master(ブランチ名)
 git push origin feature
 登録したGitHubへ送る
 featureブランチを送る
 
 コピーを作成
-git clone　
+git clone <>
 
 
 Github
@@ -46,8 +52,10 @@ Github
 git rm <> リポジトリ、ワークツリーから削除
 git rm --cached <>　リポジトリから削除
 
-git reset HEAD<>
-git checkout <>
+ステージした変更を取り消す
+git reset HEAD <>
+ファイルの変更を取り消す
+git checkout -- <>
 
 ファイルの移動を記録
 git mv<旧ファイル名><新ファイル名>
@@ -73,3 +81,8 @@ Q&A
 
 git gitdiff
 
+エイリアス設定(省略)
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.br branch
+git config --global alias.co checkout
