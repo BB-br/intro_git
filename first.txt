@@ -41,8 +41,17 @@ git clone　
 
 Github
 
+ファイルを削除を記録
 .gitignoreファイルに指定
-git rm --cached
+git rm <> リポジトリ、ワークツリーから削除
+git rm --cached <>　リポジトリから削除
+
+git reset HEAD<>
+git checkout <>
+
+ファイルの移動を記録
+git mv<旧ファイル名><新ファイル名>
+
 
 originmaster　gitのこと。
 nothin to commit working tree is crean
@@ -62,5 +71,5 @@ Q&A
 ↓
 変更が完了したものを随時ステージ化することでどのファイルが変更されたのかどうかを確認することができる
 
-git diff
+git gitdiff
 
