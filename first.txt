@@ -4,6 +4,9 @@ Gitの練習をしていきます
 j下へ
 k上へ
 q閉じる
+cd移動
+ls見る
+-a隠れファイルも見r
 
 
 testtest
@@ -32,6 +35,10 @@ git push origin feature
 登録したGitHubへ送る
 featureブランチを送る
 
+コピーを作成
+git clone　
+
+
 Github
 
 .gitignoreファイルに指定
@@ -44,4 +51,14 @@ change not stagged for commit
 ステージ化してないよ
 change to be committed
 コミットしてないよ
+
+
+gitはスナップショットで保存している。差分ではなく、すべてのファイルをその時々で保存している。
+コミットを追うことでその時々のファイルを瞬時に追える。
+
+
+Q&A
+ステージはどうしてあるのか？
+↓
+変更が完了したものを随時ステージ化することでどのファイルが変更されたのかどうかを確認することができる
 
