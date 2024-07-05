@@ -11,6 +11,8 @@ cd移動
 ls見る
 -a隠れファイルも見r
 
+cat <>中身を見る
+
 
 testtest
 git init
@@ -27,19 +29,48 @@ git log --oneline　一行表示
 git log -p ファイル名
 git log -n 3 最近の三つ
 
+
 ファイルの変更差分表示
 git diff <>
 ステージとの差分
 git diff HEAD <>
 ステージとコミットの差分
 
-git remote add origin http~~
-オリジン（URL）登録
-git push origin master
+git remote -v
+リモートリポジトリ先を表示
+git remote add <origin>(リモート先) <http~~>（URL）登録
+git push origin masSter
 origin(リモート名)master(ブランチ名)
 git push origin feature
 登録したGitHubへ送る
 featureブランチを送る
+
+リモート先の詳しい情報を知る
+git remote show <リモート名>
+リモート名名前を変える
+git remote rename<旧リモート名><新リモート名>
+リモートを削除する
+git remote rm <リモート名>
+
+リモートから情報を取得する
+git fetch <リモート先>
+git fetch origin
+ローカルに保存
+git merge origin/master
+
+リモートから取得し、ローカルに保存
+git pull <リモート名><ブランチ名>
+
+
+ブランチ（枝)
+HEADは今のブランチのこと
+ブランチ作成
+git branch <ブランチ名>
+ブランチ確認
+git branch -a
+ブランチ切り替え
+git checkout <ブランチ名>
+git checkout -b <新規ブランチ名>
 
 コピーを作成
 git clone <>
