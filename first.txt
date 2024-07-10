@@ -127,6 +127,19 @@ change not stagged for commit
 change to be committed
 コミットしてないよ
 
+git checkout -b pull_request
+
+ブランチの基点となるコミットを別のコミットに移動
+git rebase <ブランチ名>
+マージと違い、ブランチの履歴も別のブランチのものを取り込む
+①リベースしたいブランチへ行く
+git checkout <feature>
+②リベース先のブランチを行く
+git rebase <master>
+③masterへ移動する
+git checkout master
+④master
+git merge feature
 
 gitはスナップショットで保存している。差分ではなく、すべてのファイルをその時々で保存している。
 コミットを追うことでその時々のファイルを瞬時に追える。
@@ -137,7 +150,7 @@ Q&A
 ↓
 変更が完了したものを随時ステージ化することでどのファイルが変更されたのかどうかを確認することができる
 
-git gitdiff
+git diff
 
 エイリアス設定(省略)
 git config --global alias.ci commit
