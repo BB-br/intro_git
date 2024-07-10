@@ -127,6 +127,7 @@ change not stagged for commit
 change to be committed
 コミットしてないよ
 
+git checkout -b pull_request
 
 gitはスナップショットで保存している。差分ではなく、すべてのファイルをその時々で保存している。
 コミットを追うことでその時々のファイルを瞬時に追える。
